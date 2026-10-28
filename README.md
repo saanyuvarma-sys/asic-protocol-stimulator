@@ -37,15 +37,15 @@ Verification and Results
 
 The simulation was used to test valid UART frames and an invalid stop-bit condition.
 
-Test scenario| Expected behavior| Result
-Valid frame: "A5"| Byte received successfully| PASS
-Valid frame: "3C"| Byte received successfully| PASS
-Invalid stop bit| Framing error detected| PASS
 
 The testbench reported successful results for all three scenarios.
 
 Earlier functional testing also covered the data patterns "A5", "3C", "55", "FF", and "00".
-
+| Test Scenario | Expected Behavior | Result |
+|---|---|---|
+| Valid frame: A5 | Correct byte received | PASS |
+| Valid frame: 3C | Correct byte received | PASS |
+| Invalid stop bit | Framing error detected | PASS |
 Repository Structure
 
 - "design.sv" — UART receiver RTL design
